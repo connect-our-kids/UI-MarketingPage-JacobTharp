@@ -4,7 +4,7 @@ class Carousel {
         this.rightBtn = this.carousel.querySelector('.right-button');
         this.leftBtn = this.carousel.querySelector('.left-button');
         this.carouselItems = this.carousel.querySelectorAll('.dev1');
-        console.log(this.rightBtn);
+        
         
 
         this.counter = 0;
@@ -15,9 +15,11 @@ class Carousel {
 
         this.rightBtn.addEventListener('click', this.next.bind(this));
         this.leftBtn.addEventListener('click', this.prev.bind(this));
+        
     }
 
     prev() {
+        console.log("buttonclick");
         this.current.style.display = 'none';
         if (this.counter === 0) {
             this.counter = this.itemCount - 1;
@@ -28,9 +30,11 @@ class Carousel {
             this.current = this.carouselItems[this.counter];
             this.current.style.display = 'flex';
         }
+        
     }
 
     next() {
+        console.log("buttonclick");
         this.current.style.display = 'none';
         if (this.counter === this.itemCount - 1) {
             this.counter = 0;
