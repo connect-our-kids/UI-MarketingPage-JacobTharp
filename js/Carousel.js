@@ -4,13 +4,14 @@ class Carousel {
         this.rightBtn = this.carousel.querySelector('.right-button');
         this.leftBtn = this.carousel.querySelector('.left-button');
         this.carouselItems = this.carousel.querySelectorAll('.dev1');
+        console.log(this.rightBtn);
         
 
         this.counter = 0;
         this.itemCount = Array.from(this.carouselItems).length;
         this.current = this.carouselItems[0];
         this.current.style.display = 'flex';
-        console.log(this.current);
+        
 
         this.rightBtn.addEventListener('click', this.next.bind(this));
         this.leftBtn.addEventListener('click', this.prev.bind(this));
