@@ -219,7 +219,7 @@ img {
   padding: 1rem;
 }
 .dev1 {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   margin: 10%;
